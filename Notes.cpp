@@ -35,7 +35,7 @@ void swap(int &a, int &b) {		//& points to the address of 'a', not just a variab
 	b = dummy;
 }
 
-string checkEven(int x) {
+string checkEven(int x) {		//extra credit 1.
 	if (x % 2 == 0)
 		return "EVEN";
 	else if (x % 2 == 1)
@@ -43,7 +43,7 @@ string checkEven(int x) {
 	else
 		return "DOES NOT COMPUTE";
 }
-bool checkPrime(int x) {
+bool checkPrime(int x) {		//extra credit 2.
 	if (x % 2 == 0)
 		return false;
 	else {
@@ -57,10 +57,10 @@ bool checkPrime(int x) {
 void addOne(int &x) {
 	x++;
 }
-void addFive(int &x) {
+void addFive(int &x) {			//extra credit 3a.
 	x += 5;
 }
-void addFive(double &x) {
+void addFive(double &x) {		//extra credit 3b.
 	x += 5;
 }
 void getNameAge(string &name, int &age) {
