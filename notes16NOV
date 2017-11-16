@@ -1,0 +1,53 @@
+
+#include "stdafx.h"
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <vector>
+
+using namespace std;
+
+void blankify(double F[], int size);
+int getMax(int F[], int size);
+
+int main()
+{
+	srand(time(NULL));
+
+	const int SIZE = 1000;
+	int A[SIZE];
+	int B[SIZE];
+  int counter = 0;
+  
+  vector<int> v;
+	v.push_back(17);
+
+	for (int i = 0; i < SIZE; i++) {
+		A[i] = rand() % 10;
+		B[i] = rand() % 10;
+		if (A[i] == B[i])
+			counter++;
+	}
+	cout << counter;
+  
+  for (int i : B) {
+		cout << "Value " << c << ": " << i << " times." << endl;
+		c++;
+	}
+  
+  
+  return 0;
+}
+void blankify(double F[], int size) {
+	for (int i = 0; i < size; i++) {
+		F[i] = 0;
+	}
+}
+int getMax(int F[], int size) {
+	int max = 0;
+	for (int i = 0; i < size; i++) {
+		if (max < F[i])
+			max = F[i];
+	}
+	return max;
+}
