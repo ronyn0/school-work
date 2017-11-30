@@ -27,6 +27,15 @@ public:
 	double getWidth() { return width;}
 	double getArea() { return length*width; }
 };
+class carpet
+{
+private:
+	double ppsf;
+	Rectangle size;
+public:
+	void setSize(double l, double w){ size.setLenth(l); size.setWidth(w);}
+
+};
 class square
 {
 private:
